@@ -1,6 +1,6 @@
 {
   "format": "opcode16.v1",
-  "note": "Canonical kinds. Engine interns InstID=(family<<8)|member. Names are data, not code. GM/kit tables are importers only.",
+  "note": "Instrument kinds. InstID = (family << 8) | member. The gm and kit tables (0-indexed program numbers) are used only by importers, never by players. The kit table is used only for parts a person has identified as a drum kit.",
   "families": [
     {"id": 1, "name": "piano"},
     {"id": 2, "name": "ekey"},
@@ -38,7 +38,7 @@
     {"family": 4, "member": 5, "name": "guitar_muted"},
     {"family": 4, "member": 6, "name": "guitar_overdrive"},
     {"family": 4, "member": 7, "name": "guitar_distortion"},
-    {"family": 5, "member": 8, "name": "bass_synth_2"},
+    {"family": 18, "member": 2, "name": "bass_synth_2"},
     {"family": 6, "member": 2, "name": "strings_slow"},
     {"family": 7, "member": 3, "name": "synth_strings_2"},
     {"family": 7, "member": 5, "name": "choir_aahs"},
@@ -61,7 +61,7 @@
     {"family": 128, "member": 134, "name": "bottle"},
     {"family": 128, "member": 135, "name": "shakuhachi"},
     {"family": 33, "member": 1, "name": "kit_standard"},
-    {"family": 33, "member": 26, "name": "kit_electronic"},
+    {"family": 33, "member": 2, "name": "kit_electronic"},
     {"family": 254, "member": 1, "name": "analog_sine"},
     {"family": 254, "member": 4, "name": "analog_saw"}
   ],
@@ -98,6 +98,7 @@
   ],
   "kit": [
     {"prog": 0, "name": "kit_standard"},
+    {"prog": 24, "name": "kit_electronic"},
     {"prog": 25, "name": "kit_electronic"}
   ]
 }
