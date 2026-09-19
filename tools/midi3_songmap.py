@@ -111,7 +111,7 @@ def main():
     ap.add_argument("mid")
     ap.add_argument("-o", "--output")
     ap.add_argument("--json", default=os.path.join(
-        os.path.dirname(__file__), "..", "..", "Librarys", "Media", "opcode16.json"))
+        os.path.dirname(__file__), "..", "schemas", "opcode16.json"))
     args = ap.parse_args()
     fmt, ntr, div, chans, tnames = parse_smf(args.mid)
     gm, kit, names = load_reg(os.path.abspath(args.json))
