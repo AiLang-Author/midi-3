@@ -9,6 +9,7 @@ In earlier versions of MIDI, instruments are chosen by channel, program, and ban
 - [SPEC.md](SPEC.md): the specification (draft 0.1)
 - [schemas/opcode16.json](schemas/opcode16.json): instrument families, instrument names and IDs, and tables for importing General MIDI files
 - [tools/midi3_songmap.py](tools/midi3_songmap.py): a helper script that reads a Standard MIDI File and creates a `.songmap` file listing the instrument for each track
+- [tools/midi3_packcheck.py](tools/midi3_packcheck.py): checks a sample pack against the spec (file names, velocity layers, round-robin numbering, WAV format, and whether loops are whole cycles and join cleanly)
 
 This repository contains the specification only, not a player. AILANG SynthKit, a separate project, is one implementation.
 

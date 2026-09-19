@@ -75,8 +75,8 @@
     {"prog": 33, "name": "bass_electric"},
     {"prog": 39, "name": "bass_synth_2"},
     {"prog": 49, "name": "strings_slow"},
-    {"prog": 50, "name": "synth_strings_2"},
-    {"prog": 51, "name": "choir_aahs"},
+    {"prog": 51, "name": "synth_strings_2"},
+    {"prog": 52, "name": "choir_aahs"},
     {"prog": 55, "name": "orchestra_hit"},
     {"prog": 62, "name": "synth_brass_1"},
     {"prog": 72, "name": "piccolo"},
@@ -98,7 +98,6 @@
   ],
   "kit": [
     {"prog": 0, "name": "kit_standard"},
-    {"prog": 24, "name": "kit_electronic"},
-    {"prog": 25, "name": "kit_electronic"}
+    {"prog": 24, "name": "kit_electronic"}
   ]
 }
